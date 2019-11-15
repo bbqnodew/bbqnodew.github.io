@@ -1,5 +1,5 @@
 var sun = new Image();
-var moon = new Image();
+var moon = new Image();   
 var earth = new Image();
 function init() {
   sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
