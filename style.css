@@ -1,46 +1,35 @@
-body {
-    background-color: #ff4814;
+html{
+    background: black;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
   }
   
-  .container {
+  .container{
+    height: 300px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -64.5px;
-    margin-top: -85.5px;
+    margin: -150px 0 0 -150px;
   }
   
-  .ghost {
-    animation: float 3s ease-out infinite;
+  .square{
+    height: 94%;
+    width: 94%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -47% 0 0 -47%;
   }
   
-  @keyframes float {
-    50% {
-       transform: translate(0, 20px);
-    }
-  }
-  .shadowFrame {
-   width: 130px;
-  }
-  .shadow {
-    animation: shrink 3s ease-out infinite;
-    transform-origin: center center;
-    ellipse {
-      transform-origin: center center;
-    }
+  .black{ 
+    background: black;  
+    animation: rotate 10s infinite linear; 
   }
   
-  @keyframes shrink {
-    0% {
-      width: 90%;
-      margin: 0 5%;
-    }
-    50% {
-      width: 60%;
-      margin: 0 20%;
-    }
-    100% {
-      width: 90%;
-      margin: 0 5%;
-    }
+  @keyframes rotate{
+    0%{ transform: rotate(0deg); }
+      100%{ transform: rotate(360deg); }  
   }
